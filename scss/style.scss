@@ -105,14 +105,14 @@ main {
 @media (min-width: 1440px) {
 	main {
 		height: fit-content;
-		max-width: 35vw;
+		max-width: 41vw;
 	}
 
 	.card {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
-		height: auto; 
+		height: auto;
 		font-size: 0.8em;
 		padding: 0;
 
@@ -127,7 +127,6 @@ main {
 		&__content {
 			height: 100%;
 			padding: 0.3em 0.5em;
-			
 		}
 	}
 }

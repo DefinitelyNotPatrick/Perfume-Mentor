@@ -102,7 +102,7 @@ main {
   main {
     height: -moz-fit-content;
     height: fit-content;
-    max-width: 35vw;
+    max-width: 41vw;
   }
   .card {
     display: grid;
