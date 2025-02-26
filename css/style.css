@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 3.6rem;
+}
+
+main {
+  height: 80%;
+  width: 95%;
+}
+
+.card {
+  position: relative;
+  border-radius: 0.2em;
+  background-color: hsl(0, 0%, 100%);
+  padding-bottom: 1em;
+  margin: 0.2em;
+}
+.card__image {
+  width: 100%;
+  border-radius: 0.2em 0.2em 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+.card__content {
+  margin: 0 0.3em;
+}
+.card__content--category {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.25em;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+.card__content--title {
+  font-family: "Fraunces", serif;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+.card__content--description {
+  font-size: 0.36em;
+  font-weight: 500;
+  color: hsl(228, 12%, 44%);
+  margin: 0.5em 0;
+}
+.card__content--prices {
+  margin: 0.3em 0;
+}
+.card__content--prices--price {
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+.card__content--prices--price--new {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.card__content--prices--price--old {
+  position: relative;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 0.28em;
+  top: -10px;
+}
+.card__content--btn {
+  height: 4.5em;
+  width: 90%;
+  border-radius: 0.8em;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.card__content--btn-text {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.card__content--btn-icon {
+  margin-right: 0.8em;
+}
+
+@media (min-width: 1440px) {
+  main {
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 35vw;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    font-size: 0.8em;
+    padding: 0;
+  }
+  .card__image {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: auto;
+    max-width: 100%;
+    border-radius: 0.2em 0 0 0.2em;
+  }
+  .card__content {
+    height: 100%;
+    padding: 0.3em 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */
